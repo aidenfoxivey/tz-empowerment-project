@@ -1,89 +1,65 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Announcement from '~/components/widgets/Announcement.astro'
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Image from '~/components/common/Image.astro'
-import image from '~/assets/images/hero.jpg'
-import four from '~/assets/images/four.jpg'
-import group from '~/assets/images/group.jpg'
+import Layout from "~/layouts/PageLayout.astro";
+import Features from "~/components/widgets/Features.astro";
+import Content from "~/components/widgets/Content.astro";
+import Image from "src/components/common/Image.astro"
+import image from "~/assets/images/hero.jpg";
+import four from "~/assets/images/four.jpg";
+import group from "~/assets/images/group.jpg";
 
 const metadata = {
-  title: 'Tanzania Empowerment Project',
+  title: "Tanzania Empowerment Project",
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-   <Fragment slot="title">
-      Tanzania Empowerment Project
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        The <span class="font-semibold">Tanzania Empowerment Project</span> 
-        is an organization dedicated to uplifting people in Tanzania through 
-        education and global community building.
-    </Fragment>
-
-    <Announcement />
-
-    <div class="self-center mt-10 mb-10">
-    <div class="grid grid-cols-3 gap-8 mx-auto p-15 w-5/6">
-            <Image
-            src={four}
-            class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
-            widths={[400, 900]}
-            width={400}
-            alt="image"
-            sizes="(max-width: 900px) 400px, 900px"
-            aspectRatio="16:9"
-            layout="cover"
-            loading="lazy"
-            decoding="async"
-          />
-      
-            <Image
-            src={image}
-            class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
-            widths={[400, 900]}
-            width={400}
-            alt="image"
-            sizes="(max-width: 900px) 400px, 900px"
-            aspectRatio="16:9"
-            layout="cover"
-            loading="lazy"
-            decoding="async"
-          />
-
-            <Image
-            src={group}
-            class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
-            widths={[400, 900]}
-            width={400}
-            alt="image"
-            sizes="(max-width: 900px) 400px, 900px"
-            aspectRatio="16:9"
-            layout="cover"
-            loading="lazy"
-            decoding="async"
-          />
-
-    </div>
-  </div>
-
-  <Content 
-  title = "TZ Empowerment Project"
-  subtitle = "An initiative to help educate and empower women and children in Tanzania through global community building."
-  content = "We are a Canadian nonprofit organization, founded in 2012. Our mandate is to empower women and children through education. The benefits of education and global awareness apply to us all. We hope the stories and information here will inspire you, as it has inspired all of us, children and adults alike, who are involved in the Tanzania Empowerment Project."
+  <Content
+    title="TZ Empowerment Project"
+    subtitle="An initiative to help educate and empower women and children in Tanzania through global community building."
+    content="We are a Canadian nonprofit organization, founded in 2012. Our mandate is to empower women and children through education. The benefits of education and global awareness apply to us all. We hope the stories and information here will inspire you, as it has inspired all of us, children and adults alike, who are involved in the Tanzania Empowerment Project."
   />
 
+   <div class="self-center mt-10 mb-10">
+    <div class="grid md:grid-cols-3 gap-8 mx-auto p-15 w-5/6">
+      <Image
+        src={four}
+        class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
+        widths={[400, 900]}
+        width={400}
+        alt="image"
+        sizes="(max-width: 900px) 400px, 900px"
+        aspectRatio="16:9"
+        layout="cover"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <Image
+        src={image}
+        class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
+        widths={[400, 900]}
+        width={400}
+        alt="image"
+        sizes="(max-width: 900px) 400px, 900px"
+        aspectRatio="16:9"
+        layout="cover"
+        loading="lazy"
+        decoding="async"
+      />
+
+      <Image
+        src={group}
+        class="w-half md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700 mx-auto p-15"
+        widths={[400, 900]}
+        width={400}
+        alt="image"
+        sizes="(max-width: 900px) 400px, 900px"
+        aspectRatio="16:9"
+        layout="cover"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </div>
 </Layout>
