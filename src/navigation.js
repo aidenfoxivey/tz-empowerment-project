@@ -44,7 +44,7 @@ export const headerData = {
       href: getPermalink('/contact-us'),
     },
   ],
-  actions: [{ type: 'button', text: 'donate', href: getPermalink('/donate') }],
+  actions: [{ type: 'button', text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' }],
 };
 
 export const footerData = {
