@@ -12,7 +12,7 @@ export const headerData = {
     },
     {
       text: 'contact us',
-      href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss',
+      href: getPermalink('/contact-us'),
     },
   ],
   actions: [{ type: 'button', text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' }],
