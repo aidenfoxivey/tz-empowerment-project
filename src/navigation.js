@@ -27,9 +27,9 @@ export const footerData = {
     {
       title: 'participate',
       links: [
-        { text: 'donate', href: '#' },
-        { text: 'fundraise', href: '#' },
-        { text: 'volunteer', href: '#' },
+        { text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' },
+        // { text: 'fundraise', href: '#' },
+        // { text: 'volunteer', href: '#' },
       ],
     },
   ],
