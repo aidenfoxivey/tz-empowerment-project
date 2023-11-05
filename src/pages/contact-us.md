@@ -3,4 +3,4 @@ title: 'Contact Us'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Check back soon for when we have our email address here.
+Contact us via [connect@tzempower.org](mailto:connect@tzempower.org) with any questions you might have.

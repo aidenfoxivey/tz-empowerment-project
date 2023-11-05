@@ -1,39 +1,10 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    // {
-    //   text: 'Blog',
-    //   links: [
-    //     {
-    //       text: 'Blog List',
-    //       href: getBlogPermalink(),
-    //     },
-    //     {
-    //       text: 'Article',
-    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-    //     },
-    //     {
-    //       text: 'Article (with MDX)',
-    //       href: getPermalink('markdown-elements-demo-post', 'post'),
-    //     },
-    //     {
-    //       text: 'Category Page',
-    //       href: getPermalink('tutorials', 'category'),
-    //     },
-    //     {
-    //       text: 'Tag Page',
-    //       href: getPermalink('astro', 'tag'),
-    //     },
-    //   ],
-    // },
     {
       text: 'get involved',
       href: getPermalink('/get-involved'),
-    },
-    {
-      text: 'our work',
-      href: getPermalink('/our-work'),
     },
     {
       text: 'about us',
@@ -41,7 +12,7 @@ export const headerData = {
     },
     {
       text: 'contact us',
-      href: getPermalink('/contact-us'),
+      href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss',
     },
   ],
   actions: [{ type: 'button', text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' }],
@@ -51,7 +22,7 @@ export const footerData = {
   links: [
     {
       title: 'learn more',
-      links: [{ text: 'support a student', href: '#' }],
+      links: [{ text: 'about us', href: '/about-us' }],
     },
     {
       title: 'participate',
@@ -59,14 +30,6 @@ export const footerData = {
         { text: 'donate', href: '#' },
         { text: 'fundraise', href: '#' },
         { text: 'volunteer', href: '#' },
-      ],
-    },
-    {
-      title: 'who is involved',
-      links: [
-        { text: 'our board', href: '#' },
-        { text: 'partners in Tanzania', href: '#' },
-        { text: 'meet our students', href: '#' },
       ],
     },
   ],
