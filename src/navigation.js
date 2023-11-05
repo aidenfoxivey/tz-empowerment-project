@@ -18,23 +18,23 @@ export const headerData = {
   actions: [{ type: 'button', text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' }],
 };
 
-export const footerData = {
-  links: [
-    {
-      title: 'learn more',
-      links: [{ text: 'about us', href: '/about-us' }],
-    },
-    {
-      title: 'participate',
-      links: [
-        { text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' },
-        // { text: 'fundraise', href: '#' },
-        // { text: 'volunteer', href: '#' },
-      ],
-    },
-  ],
-  secondaryLinks: [
-    { text: 'terms', href: getPermalink('/terms') },
-    { text: 'privacy policy', href: getPermalink('/privacy') },
-  ],
-};
+// export const footerData = {
+//   links: [
+//     {
+//       title: 'learn more',
+//       links: [{ text: 'about us', href: '/about' }],
+//     },
+//     {
+//       title: 'participate',
+//       links: [
+//         { text: 'donate', href: 'https://buy.stripe.com/4gwg11cet8dC0Ny7ss' },
+//         // { text: 'fundraise', href: '#' },
+//         // { text: 'volunteer', href: '#' },
+//       ],
+//     },
+//   ],
+//   secondaryLinks: [
+//     { text: 'terms', href: getPermalink('/terms') },
+//     { text: 'privacy policy', href: getPermalink('/privacy') },
+//   ],
+// };
